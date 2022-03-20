@@ -539,6 +539,7 @@ footer .sponsors figure img {
   font-size: 30px;
   font-weight: bold;
   width: 200px;
+  text-align: center;
 }
 
 .team .member-card p.member-sub {
