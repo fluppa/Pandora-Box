@@ -1,0 +1,84 @@
+.news-card {
+  $card-height: 661px;
+  $card-width: 393px;
+  position: relative;
+  background-color: blue;
+  height: $card-height;
+  width: $card-width;
+  display: flex;
+  color: white;
+  text-decoration: none;
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .background-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .background-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: $card-width;
+    height: 130px;
+    background: linear-gradient(rgba(0, 0, 0, 0), #121212);
+  }
+  .info-wrapper {
+    z-index: 2;
+    margin: 0 0 20px 20px;
+    align-self: flex-end;
+  }
+  .tags {
+    display: flex;
+    margin-bottom: 10px;
+    .tag {
+      font-size: 11px;
+      font-weight: 500;
+      $tag_height: 17px;
+      margin-right: 10px;
+      height: $tag_height;
+      line-height: $tag_height;
+      width: 46px;
+      background-color: red;
+      text-align: center;
+    }
+    #wta {
+      background-color: #d3171d;
+    }
+    #htr {
+      background-color: #f58220;
+    }
+    #vtm {
+      background-color: #f17ba3;
+    }
+    #wto {
+      background-color: #7f9596;
+    }
+    #ctl {
+      background-color: #a0bf94;
+    }
+    #mct {
+      background-color: #c3a449;
+    }
+  }
+  .text {
+    .title {
+      margin: 0 0 5px 0;
+      text-transform: uppercase;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .date {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

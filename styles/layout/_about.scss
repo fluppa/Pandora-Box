@@ -1,0 +1,77 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .member-border {
+    border: #f58220 5px solid;
+  }
+  .background-logo-decoration {
+    position: absolute;
+    z-index: -1;
+    left: 871px;
+    top: -49px;
+  }
+  h3,
+  h4,
+  h5 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+  h3 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0 0 100px 0;
+  }
+  h4 {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 0 0 80px 0;
+  }
+  h5 {
+    color: #a0a0a0;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .about-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 108px;
+  }
+  .scroll-button {
+    margin-left: 14px;
+  }
+  .about-text-wrapper {
+    //background-color: red;
+    margin-top: 285px;
+    width: 1230px;
+    .text-wrapper {
+      width: 555px;
+    }
+  }
+  .team-wrapper {
+    margin: 115px 0 112px 0;
+    //background-color: yellow;
+    width: 1230px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-origin-wrapper {
+    // margin-top: 115px;
+    //background-color: blue;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .logo-background {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  .signature {
+    font-weight: 500;
+  }
+}

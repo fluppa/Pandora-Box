@@ -1,0 +1,23 @@
+#patrons {
+  .background-logo-decoration {
+    position: absolute;
+    z-index: -1;
+    left: 960px;
+    top: 960px;
+  }
+  .landing {
+    margin-bottom: 160px;
+    //height: 1080px;
+  }
+  h3 {
+    font-size: 71px;
+    font-weight: bold;
+    margin: 264px 0 250px 0;
+    text-transform: uppercase;
+  }
+  .stats-wrapper {
+    width: 1230px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

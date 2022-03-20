@@ -1,0 +1,33 @@
+.segment {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 140px;
+  h4 {
+    text-transform: uppercase;
+    //margin: 160px 0 0 0;
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .p-wrapper {
+    width: 1230px;
+  }
+  .logo-wrapper {
+    margin: 100px 0 0 0;
+    width: 1230px;
+    display: flex;
+    gap: 128px;
+    .logo-link {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .inner-wrapper {
+    margin: 100px 0 0 0;
+    width: 1230px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

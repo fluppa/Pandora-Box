@@ -1,0 +1,41 @@
+.team {
+  width: 1230px;
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  .member-card {
+    position: relative;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p.member-bold {
+      margin: 50px 0 0 0;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bold;
+      width: 200px;
+    }
+    p.member-sub {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 400;
+      color: #a0a0a0;
+    }
+    .member-photo {
+      width: 236px;
+      height: 236px;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+    .member-border {
+      position: absolute;
+      width: 190px;
+      height: 190px;
+      top: 19px;
+      transform: rotate(45deg);
+      //border: #f58220 5px solid;
+    }
+  }
+}

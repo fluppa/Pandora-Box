@@ -1,0 +1,19 @@
+.logo-origin {
+  width: 1230px;
+  height: 890px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text {
+    width: 555px;
+    h4 {
+      text-align: right;
+    }
+  }
+  .signature {
+    margin-top: -97px;
+    float: right;
+    text-align: right;
+  }
+}
