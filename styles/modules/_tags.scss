@@ -1,0 +1,29 @@
+.tag {
+  font-size: 11px;
+  font-weight: 500;
+  $tag_height: 17px;
+  margin-right: 10px;
+  height: $tag_height;
+  line-height: $tag_height;
+  width: 46px;
+  background-color: red;
+  text-align: center;
+}
+#wta {
+  background-color: #d3171d;
+}
+#htr {
+  background-color: #f58220;
+}
+#vtm {
+  background-color: #f17ba3;
+}
+#wto {
+  background-color: #7f9596;
+}
+#ctl {
+  background-color: #a0bf94;
+}
+#mct {
+  background-color: #c3a449;
+}

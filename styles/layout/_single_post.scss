@@ -1,0 +1,55 @@
+#single-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .post-main-image {
+    position: absolute;
+    top: 0;
+    left: vw(130px);
+  }
+  .date-and-tags {
+    display: flex;
+    justify-content: end;
+    time {
+      margin-right: 10px;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .tag:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .post-wrapper {
+    display: flex;
+    width: $standard_width;
+    justify-content: end;
+    margin-bottom: 115px;
+  }
+  .post {
+    position: relative;
+    margin-top: 236px;
+    width: 554px;
+    height: auto;
+    text-align: right;
+  }
+  header {
+    margin-bottom: 90px;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+  .mini-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .mini-photo {
+    max-width: 178px;
+    max-height: 120px;
+  }
+  article {
+    margin-bottom: 50px;
+  }
+}
