@@ -37,9 +37,15 @@
     }
     #youtube {
       background: linear-gradient(#ff0000, #800000);
+      &:hover {
+        background: linear-gradient(#800000, #ff0000);
+      }
     }
     #spotify {
       background: linear-gradient(#21c55a, #199143);
+      &:hover {
+        background: linear-gradient(#199143, #21c55a);
+      }
     }
   }
 }

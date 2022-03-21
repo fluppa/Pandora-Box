@@ -676,9 +676,19 @@ h6 {
   background: linear-gradient(#ff0000, #800000);
 }
 
+#programs .button-wrapper #youtube:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#800000), to(#ff0000));
+  background: linear-gradient(#800000, #ff0000);
+}
+
 #programs .button-wrapper #spotify {
   background: -webkit-gradient(linear, left top, left bottom, from(#21c55a), to(#199143));
   background: linear-gradient(#21c55a, #199143);
+}
+
+#programs .button-wrapper #spotify:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#199143), to(#21c55a));
+  background: linear-gradient(#199143, #21c55a);
 }
 
 #programs .series {
@@ -1332,6 +1342,13 @@ h6 {
   top: 0;
 }
 
+#programs .background-logo-decoration {
+  position: absolute;
+  z-index: -2;
+  left: -173px;
+  top: 1516px;
+}
+
 #single-post {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1414,5 +1431,11 @@ h6 {
 
 #single-post article {
   margin-bottom: 50px;
+}
+
+#single-post .background-logo-decoration {
+  position: absolute;
+  left: -436px;
+  top: 1194px;
 }
 /*# sourceMappingURL=styles.css.map */
