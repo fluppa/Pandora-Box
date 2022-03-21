@@ -123,11 +123,13 @@ nav ul a:before {
 
 footer {
   height: 373px;
-  max-width: 100vw;
+  width: 100vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 176px 57px 140px;
       grid-template-rows: 176px 57px 140px;
+  position: absolute;
+  left: 0;
   background-color: #121212;
 }
 
@@ -291,6 +293,35 @@ footer .sponsors figure img {
   height: 130px;
   bottom: -130px;
   left: 0;
+}
+
+h4 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #a0a0a0;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.basic-text {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .news-card {
@@ -596,12 +627,17 @@ footer .sponsors figure img {
 
 .scroll-button {
   position: relative;
+  z-index: 2;
   height: 65px;
   width: 65px;
   display: block;
-  background-color: #707070;
+  background-color: #ffffff8a;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: brightness(60%);
+          backdrop-filter: brightness(60%);
 }
 
 .scroll-button::after {
@@ -611,9 +647,163 @@ footer .sponsors figure img {
   position: absolute;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  left: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../resources/scroll-arrow.svg");
+}
+
+#programs .program-text {
+  margin-right: -9.89583vw;
+  width: 28.90625vw;
+  text-align: right;
+}
+
+#programs .program-text h3 {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0 0 10.18519vh 0;
+}
+
+#programs .program-text h5 {
+  color: #e0e0e0;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#programs .program-text p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#programs .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 1.40625vw;
+}
+
+#programs .button-wrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  width: 156px;
+  height: 46px;
+  text-transform: uppercase;
+}
+
+#programs .button-wrapper #youtube {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#800000));
+  background: linear-gradient(#ff0000, #800000);
+}
+
+#programs .button-wrapper #spotify {
+  background: -webkit-gradient(linear, left top, left bottom, from(#21c55a), to(#199143));
+  background: linear-gradient(#21c55a, #199143);
+}
+
+#programs .series {
+  width: 1230px;
+  margin: 0 0 12.03704vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#programs .series .series-wrapper {
+  width: 1230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 26px;
+}
+
+#programs .series-card {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 660px;
+  width: 390px;
+}
+
+#programs .series-card .series-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+#programs .series-card .background-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: radial-gradient(#12121200, #121212);
+}
+
+#programs .series-card .background-gradient-bottom {
+  position: absolute;
+  height: 130px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#12121200), to(#121212));
+  background: linear-gradient(#12121200, #121212);
+  z-index: -1;
+}
+
+#programs .series-card p {
+  margin: 0;
+}
+
+#programs .series-card .rpg-title {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+#programs .series-card .series-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 45px;
 }
 
 #program {
@@ -631,7 +821,7 @@ footer .sponsors figure img {
 #program .scroll-button {
   margin-left: auto;
   margin-right: auto;
-  top: 800px;
+  top: 74.07407vh;
   z-index: 1;
 }
 
@@ -1074,5 +1264,71 @@ footer .sponsors figure img {
 
 #about .signature {
   font-weight: 500;
+}
+
+#programs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#programs h3,
+#programs h4,
+#programs h5 {
+  text-transform: uppercase;
+}
+
+#programs h4 {
+  font-size: 55px;
+  font-weight: bold;
+  margin: 0 0 7.40741vh 0;
+}
+
+#programs .scroll-button {
+  margin-left: auto;
+  margin-right: auto;
+  top: 81.48148vh;
+  position: absolute;
+}
+
+#programs .landing {
+  margin: 0 0 10.18519vh 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#programs .landing img {
+  max-width: 100vw;
+}
+
+#programs .landing .content-wrapper {
+  z-index: 1;
+  width: 1230px;
+  margin: 22.22222vh 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+#programs .landing .content-wrapper .series-card {
+  margin-left: 4.16667vw;
+}
+
+#programs .landing .background-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
 }
 /*# sourceMappingURL=styles.css.map */

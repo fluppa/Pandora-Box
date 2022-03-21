@@ -1,9 +1,11 @@
 $margin: 345px;
 footer {
   height: 373px;
-  max-width: 100vw;
+  width: 100vw;
   display: grid;
   grid-template-rows: 176px 57px 140px;
+  position: absolute;
+  left: 0;
   background-color: #121212;
   .row {
     display: flex;

@@ -1,0 +1,45 @@
+#programs {
+  .program-text {
+    margin-right: vw(-190px);
+    width: vw(555px);
+    text-align: right;
+    h3 {
+      font-size: 70px;
+      font-weight: bold;
+      margin: 0 0 vh(110px) 0;
+    }
+    h5 {
+      color: #e0e0e0;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: right;
+    gap: vw(27px);
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      width: 156px;
+      height: 46px;
+      text-transform: uppercase;
+    }
+    #youtube {
+      background: linear-gradient(#ff0000, #800000);
+    }
+    #spotify {
+      background: linear-gradient(#21c55a, #199143);
+    }
+  }
+}
