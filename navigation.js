@@ -2,7 +2,7 @@ export const navigation = () => {
   document.querySelector('nav').innerHTML = `<img class="logo" src="resources/navlogo.svg" />
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li><a href="about.html">O nas</a></li>
         <li><a href="program.html">Programy</a></li>

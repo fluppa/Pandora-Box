@@ -1,0 +1,16 @@
+.button-more {
+  display: inline-block;
+  $button-height: 46px;
+  padding: 0 32px 0 32px;
+  height: $button-height;
+  line-height: $button-height;
+  text-transform: uppercase;
+  font-size: 19px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(#f8ce6a, #f58220);
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(#f58220, #f8ce6a);
+  }
+}

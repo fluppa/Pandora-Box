@@ -1,0 +1,15 @@
+.patronite-button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 46px;
+  width: auto;
+  line-height: 46px;
+  padding: 0 20px 0 20px;
+  background: linear-gradient(#f1592a, #ed2224);
+}
+.patronite-button:hover {
+  background: linear-gradient(#ed2224, #f1592a);
+}

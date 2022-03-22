@@ -4,11 +4,11 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #121212;
-  overflow-x: hidden;
 }
 
 .landing {
   height: 100vh;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +123,7 @@ nav ul a:before {
 
 footer {
   height: 373px;
-  width: 100vw;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 176px 57px 140px;
@@ -182,24 +182,6 @@ footer .sc-wrapper {
 footer .sc-wrapper .icon {
   margin: 0 25px 0 0;
   display: block;
-}
-
-footer .sc-wrapper .patronite-button {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  height: 46px;
-  width: auto;
-  line-height: 46px;
-  padding: 0 20px 0 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1592a), to(#ed2224));
-  background: linear-gradient(#f1592a, #ed2224);
-}
-
-footer .sc-wrapper .patronite-button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ed2224), to(#f1592a));
-  background: linear-gradient(#ed2224, #f1592a);
 }
 
 footer .copy {
@@ -716,7 +698,7 @@ h6 {
   gap: 26px;
 }
 
-#programs .series-card {
+.series-card {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -738,7 +720,7 @@ h6 {
   width: 390px;
 }
 
-#programs .series-card .series-background {
+.series-card .series-background {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -747,7 +729,7 @@ h6 {
   z-index: -2;
 }
 
-#programs .series-card .background-mask {
+.series-card .background-mask {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -757,7 +739,7 @@ h6 {
   background: radial-gradient(#12121200, #121212);
 }
 
-#programs .series-card .background-gradient-bottom {
+.series-card .background-gradient-bottom {
   position: absolute;
   height: 130px;
   width: 100%;
@@ -766,16 +748,16 @@ h6 {
   z-index: -1;
 }
 
-#programs .series-card p {
+.series-card p {
   margin: 0;
 }
 
-#programs .series-card .rpg-title {
+.series-card .rpg-title {
   font-size: 10px;
   font-weight: 500;
 }
 
-#programs .series-card .series-title {
+.series-card .series-title {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 45px;
@@ -816,9 +798,52 @@ h6 {
   background-color: #c3a449;
 }
 
+.button-more {
+  display: inline-block;
+  padding: 0 32px 0 32px;
+  height: 46px;
+  line-height: 46px;
+  text-transform: uppercase;
+  font-size: 19px;
+  text-align: center;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8ce6a), to(#f58220));
+  background: linear-gradient(#f8ce6a, #f58220);
+}
+
+.button-more:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f58220), to(#f8ce6a));
+  background: linear-gradient(#f58220, #f8ce6a);
+}
+
+.patronite-button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 46px;
+  width: auto;
+  line-height: 46px;
+  padding: 0 20px 0 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1592a), to(#ed2224));
+  background: linear-gradient(#f1592a, #ed2224);
+}
+
+.patronite-button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ed2224), to(#f1592a));
+  background: linear-gradient(#ed2224, #f1592a);
+}
+
 #program {
   background-color: #121212;
   color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
 }
 
 #program .background-logo-decoration {
@@ -1126,21 +1151,6 @@ h6 {
 
 #news .button-more {
   margin: 60px 0 140px 0;
-  width: 234px;
-  height: 46px;
-  line-height: 46px;
-  text-transform: uppercase;
-  font-size: 19px;
-  text-align: center;
-  font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f8ce6a), to(#f58220));
-  background: linear-gradient(#f8ce6a, #f58220);
-}
-
-#news .button-more:hover {
-  cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f58220), to(#f8ce6a));
-  background: linear-gradient(#f58220, #f8ce6a);
 }
 
 #patrons .background-logo-decoration {
@@ -1169,6 +1179,10 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#patrons .segment {
+  max-width: 100%;
 }
 
 #about {
@@ -1268,6 +1282,7 @@ h6 {
 }
 
 #about .logo-origin-wrapper .logo-background {
+  width: 100%;
   position: absolute;
   z-index: -1;
 }
@@ -1337,9 +1352,13 @@ h6 {
 
 #programs .landing .background-wrapper {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   top: 0;
+}
+
+#programs .landing .background-wrapper img {
+  max-width: 100%;
 }
 
 #programs .background-logo-decoration {
