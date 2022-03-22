@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #121212;
+  overflow-x: hidden;
 }
 
 .landing {
@@ -277,6 +278,11 @@ footer .sponsors figure img {
   left: 0;
 }
 
+h3 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
 h4 {
   font-size: 55px;
   font-weight: bold;
@@ -304,6 +310,7 @@ h6 {
 .basic-text {
   font-size: 18px;
   font-weight: 400;
+  text-align: justify;
 }
 
 .news-card {
@@ -836,205 +843,7 @@ h6 {
   background: linear-gradient(#ed2224, #f1592a);
 }
 
-#program {
-  background-color: #121212;
-  color: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100vw;
-}
-
-#program .background-logo-decoration {
-  position: absolute;
-  z-index: 0;
-  top: 900px;
-  left: 1000px;
-}
-
-#program .scroll-button {
-  margin-left: auto;
-  margin-right: auto;
-  top: 74.07407vh;
-  z-index: 1;
-}
-
-#program .member-border {
-  border: #f17ba3 5px solid;
-}
-
-#program header {
-  margin: 0 0 150px 0;
-  padding: 0;
-  height: 100vh;
-  text-transform: uppercase;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#program header h1 {
-  z-index: 1;
-  margin: 0;
-  font-size: 106px;
-  font-weight: bold;
-}
-
-#program header h3 {
-  z-index: 1;
-  margin: 0;
-  font-size: 21px;
-  font-weight: 400;
-}
-
-#program header .background-wrapper {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  z-index: 0;
-}
-
-#program section h3 {
-  font-size: 56px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#program .summary {
-  margin: 0 0 121px 345px;
-}
-
-#program .summary h1,
-#program .summary h3 {
-  font-weight: bold;
-}
-
-#program .summary h1 {
-  font-size: 71px;
-  margin: 0;
-}
-
-#program .summary h3 {
-  margin: 113px 0 85px 0;
-}
-
-#program .summary h4 {
-  margin: 0;
-  color: #a0a0a0;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-#program .summary article {
-  width: 555px;
-  font-size: 19px;
-  text-align: justify;
-  font-weight: bold;
-}
-
-#program .cast {
-  text-align: center;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#program .cast h3 {
-  margin-bottom: 60px;
-}
-
-#program .cast h4,
-#program .cast h5 {
-  margin: 0;
-}
-
-#program .cast h4 {
-  font-size: 31px;
-  max-width: 245px;
-  font-weight: bold;
-  margin: 0;
-}
-
-#program .cast h5 {
-  font-size: 16px;
-  font-weight: 500;
-  color: #a0a0a0;
-  margin: 0;
-}
-
-#program .cast .wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 100px;
-}
-
-#program .cast figure {
-  margin: 0 62px 0 0;
-  position: relative;
-}
-
-#program .cast figure:last-child {
-  margin: 0;
-}
-
-#program .cast figcaption {
-  margin-top: 27px;
-}
-
-#program .cast img {
-  z-index: 0;
-}
-
-#program .cast .border {
-  position: absolute;
-  top: -19px;
-  left: -16px;
-  z-index: 1;
-}
-
-#program .episodes {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 140px;
-}
-
-#program .episodes h3 {
-  margin-top: 160px;
-  margin-bottom: 60px;
-}
-
-#program .episodes ul {
+.episodes-wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1049,7 +858,7 @@ h6 {
   margin: 0;
 }
 
-#program .episodes li {
+.episodes-wrapper li {
   width: 590px;
   height: 92px;
   margin-bottom: 50px;
@@ -1061,7 +870,7 @@ h6 {
           align-items: center;
 }
 
-#program .episodes a {
+.episodes-wrapper a {
   position: absolute;
   margin: 0;
   display: block;
@@ -1072,7 +881,7 @@ h6 {
           transform: translateX(15px) rotate(45deg);
 }
 
-#program .episodes a .play-button {
+.episodes-wrapper a .play-button {
   height: 66px;
   width: 66px;
   position: absolute;
@@ -1083,29 +892,161 @@ h6 {
           transform: rotate(-45deg) translateX(5px);
 }
 
-#program .episodes h4,
-#program .episodes h5 {
-  margin: 0 0 0 80px;
-  text-align: left;
-}
-
-#program .episodes h4 {
-  font-size: 15px;
-  color: #a0a0a0;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-#program .episodes h5 {
-  font-size: 18px;
-  font-weight: normal;
-}
-
-#program .episodes span {
+.episodes-wrapper span {
   background-color: #414141;
   padding: 26px 0 26px 0;
   width: 543px;
   margin-left: 49px;
+}
+
+.episodes-wrapper h5 {
+  margin-left: 85px;
+  text-align: left;
+}
+
+.episodes-wrapper .basic-text {
+  padding: 0;
+  margin: 0 0 0 85px;
+  text-align: left;
+}
+
+#program {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#program h4 {
+  margin-bottom: 80px;
+}
+
+#program header {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#program header h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 105px;
+  font-weight: bold;
+}
+
+#program header h6 {
+  font-size: 20px;
+  color: #e0e0e0;
+  font-weight: 400;
+}
+
+#program .scroll-button {
+  margin-left: auto;
+  margin-right: auto;
+  top: 81.48148vh;
+  position: absolute;
+}
+
+#program .landing {
+  margin: 0 0 10.18519vh 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#program .landing .background-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+
+#program .landing .background-wrapper img {
+  z-index: -2;
+  max-width: 100%;
+}
+
+#program .summary-wrapper {
+  width: 1230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+#program .summary-wrapper h5 {
+  margin-bottom: 100px;
+}
+
+#program .summary-wrapper article {
+  max-width: 555px;
+}
+
+#program .team-wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1230px;
+}
+
+#program .team-wrapper .member-border {
+  border: #f17ba3 5px solid;
+}
+
+#program .episodes-wrapper {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 170px 0 140px 0;
+}
+
+#program .background-logo-decoration {
+  position: absolute;
+  z-index: -2;
+  left: 1100px;
+  top: 1000px;
 }
 
 #news {

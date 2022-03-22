@@ -1,0 +1,52 @@
+.episodes-wrapper {
+  $buttonColor: #f17ba3;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    max-width: 1230px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    width: 590px;
+    height: 92px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+  a {
+    position: absolute;
+    margin: 0;
+    display: block;
+    height: 66px;
+    width: 66px;
+    background-color: $buttonColor;
+    transform: translateX(15px) rotate(45deg);
+    .play-button {
+      height: 66px;
+      width: 66px;
+      position: absolute;
+      background-image: url('../resources/Path\ 28.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: rotate(-45deg) translateX(5px);
+    }
+  }
+  span {
+    background-color: #414141;
+    padding: 26px 0 26px 0;
+    width: 543px;
+    margin-left: 49px;
+  }
+  h5 {
+    margin-left: 85px;
+    text-align: left;
+  }
+  .basic-text {
+    padding: 0;
+    margin: 0 0 0 85px;
+    text-align: left;
+  }
+}
