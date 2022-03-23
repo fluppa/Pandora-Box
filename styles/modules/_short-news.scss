@@ -1,0 +1,10 @@
+.short-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+  .news-wrapper {
+    display: flex;
+    gap: 26px;
+  }
+}

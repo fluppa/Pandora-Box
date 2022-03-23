@@ -8,6 +8,9 @@
   font-size: 19px;
   text-align: center;
   font-weight: bold;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
   background: linear-gradient(#f8ce6a, #f58220);
   &:hover {
     cursor: pointer;

@@ -1,0 +1,14 @@
+.our-shows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: $standard_width;
+  margin-bottom: 300px;
+  .show-slider {
+    display: flex;
+    .slides-wrapper {
+      display: flex;
+    }
+  }
+}
