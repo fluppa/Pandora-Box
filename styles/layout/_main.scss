@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  .background-logo-decoration {
+    position: absolute;
+    top: vh(2011px);
+    left: vw(-130px);
+    z-index: -1;
+  }
   h4 {
     margin-bottom: 64px;
   }
@@ -10,8 +16,41 @@
     z-index: -2;
     opacity: 70%;
   }
-  ul {
-    display: none;
+  .side-menu {
+    padding: 0;
+    position: absolute;
+    list-style: none;
+    top: vh(375px);
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: #6c6c6c;
+    li {
+      position: relative;
+      padding-left: 35px;
+      padding-right: 15px;
+      margin-bottom: 5px;
+      background-color: #313436ed;
+    }
+    li::after {
+      display: block;
+      right: -7px;
+      top: 0;
+      position: absolute;
+      content: ' ';
+      height: 100%;
+      width: 7px;
+      z-index: 1;
+      background-color: #6c6c6c;
+    }
+    li:hover {
+      cursor: pointer;
+      color: white;
+    }
+    li:hover::after {
+      background: linear-gradient(#f8ce6a, #f58220);
+    }
   }
   .button-more {
     margin-top: 80px;

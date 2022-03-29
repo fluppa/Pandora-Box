@@ -7,8 +7,27 @@
   margin-bottom: 300px;
   .show-slider {
     display: flex;
+    align-items: center;
+    position: relative;
+    width: 1150px;
     .slides-wrapper {
       display: flex;
+      z-index: 0;
+      width: 1000px;
+
+      a {
+        z-index: 1;
+      }
+      a:first-child {
+        transform: scale(0.89) translateX(50px);
+        filter: grayscale(100%);
+        z-index: 0;
+      }
+      a:last-child {
+        transform: scale(0.89) translateX(-50px);
+        filter: grayscale(100%);
+        z-index: 0;
+      }
     }
   }
 }
