@@ -11,12 +11,17 @@ $standard_width: 1230px;
   @return ($width * 100vw) / $base_vw;
 }
 
+html {
+  //min-height: 100%;
+  //position: relative;
+}
+
 body {
   color: white;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #121212;
-  //overflow-x: hidden;
+  overflow-x: hidden;
 }
 .landing {
   height: 100vh;

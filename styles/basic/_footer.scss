@@ -4,8 +4,9 @@ footer {
   width: 100%;
   display: grid;
   grid-template-rows: 176px 57px 140px;
-  position: absolute;
+  //position: absolute;
   left: 0;
+  bottom: 0;
   background-color: #121212;
   .row {
     display: flex;

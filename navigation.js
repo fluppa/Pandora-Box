@@ -1,5 +1,5 @@
 export const navigation = () => {
-  document.querySelector('nav').innerHTML = `<img class="logo" src="resources/navlogo.svg" />
+  document.querySelector('nav').innerHTML = `<img class="logo" src="resources/nav/navlogo.svg" />
       <ul>
         <li>
           <a href="index.html">Home</a>

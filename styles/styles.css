@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #121212;
+  overflow-x: hidden;
 }
 
 .landing {
@@ -128,8 +129,8 @@ footer {
   display: grid;
   -ms-grid-rows: 176px 57px 140px;
       grid-template-rows: 176px 57px 140px;
-  position: absolute;
   left: 0;
+  bottom: 0;
   background-color: #121212;
 }
 
@@ -657,6 +658,12 @@ h6 {
   width: 156px;
   height: 46px;
   text-transform: uppercase;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+#programs .button-wrapper a:after {
+  content: none;
 }
 
 #programs .button-wrapper #youtube {
@@ -883,6 +890,10 @@ h6 {
   background-color: #f17ba3;
   -webkit-transform: translateX(15px) rotate(45deg);
           transform: translateX(15px) rotate(45deg);
+}
+
+.episodes-wrapper a::after {
+  content: none;
 }
 
 .episodes-wrapper a .play-button {
@@ -1305,7 +1316,7 @@ h6 {
 #patrons h3 {
   font-size: 71px;
   font-weight: bold;
-  margin: 264px 0 250px 0;
+  margin: 24.44444vh 0 250px 0;
   text-transform: uppercase;
 }
 
@@ -1317,6 +1328,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 160px;
 }
 
 #patrons .segment {

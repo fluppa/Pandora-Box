@@ -12,13 +12,14 @@
   h3 {
     font-size: 71px;
     font-weight: bold;
-    margin: 264px 0 250px 0;
+    margin: vh(264px) 0 250px 0;
     text-transform: uppercase;
   }
   .stats-wrapper {
     width: 1230px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 160px;
   }
   .segment {
     max-width: 100%;

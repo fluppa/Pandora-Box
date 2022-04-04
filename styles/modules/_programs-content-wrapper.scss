@@ -34,7 +34,12 @@
       width: 156px;
       height: 46px;
       text-transform: uppercase;
+      transform: translate(0);
+      &:after {
+        content: none;
+      }
     }
+
     #youtube {
       background: linear-gradient(#ff0000, #800000);
       &:hover {

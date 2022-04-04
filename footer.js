@@ -1,11 +1,11 @@
 export const footer = () => {
   document.querySelector('footer').innerHTML = `  <div class="row">
-        <img class="logo" src="resources/footerlogo.svg" />
+        <img class="logo" src="resources/footer/footerlogo.svg" />
         <div class="sc-wrapper">
-          <a href="#"><img class="icon" src="resources/youtube.svg" /></a>
-          <a href="#"><img class="icon" src="resources/fbook.svg" /></a>
-          <a href="#"><img class="icon" src="resources/spotify.svg" /></a>
-          <a href="#"><img class="icon" src="resources/patronite.svg" /></a>
+          <a href="#"><img class="icon" src="resources/global/youtube.svg" /></a>
+          <a href="#"><img class="icon" src="resources/global/fbook.svg" /></a>
+          <a href="#"><img class="icon" src="resources/global/spotify.svg" /></a>
+          <a href="#"><img class="icon" src="resources/global/patronite.svg" /></a>
           <a class="patronite-button" href="#">Zostań Patronem</a>
         </div>
       </div>
@@ -20,21 +20,21 @@ export const footer = () => {
         <div class="sponsors">
           <figure>
             <figcaption>Zdjęcia:</figcaption>
-            <img src="resources/unsplashlogo.svg" />
+            <img src="resources/footer/unsplashlogo.svg" />
           </figure>
           <figure>
             <figcaption>Licencja i symbole:</figcaption>
-            <img src="resources/darkpacklogo.svg" />
+            <img src="resources/footer/darkpacklogo.svg" />
           </figure>
           <figure>
             <figcaption>Licencja i symbole:</figcaption>
-            <img src="resources/artneologo.svg" />
+            <img src="resources/footer/artneologo.svg" />
           </figure>
           <figure>
-            <img src="resources/rebellogo.svg" />
+            <img src="resources/footer/rebellogo.svg" />
           </figure>
           <figure>
-            <img src="resources/something.svg" />
+            <img src="resources/footer/something.svg" />
           </figure>
         </div>`
 }
